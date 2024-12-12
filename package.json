@@ -1,0 +1,17 @@
+{
+  "name": "realworld-starter-kit",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "generate-schema": "bunx drizzle-kit generate --dialect sqlite --schema ./src/db/schema.ts",
+    "migrate": "bun run src/db/migrate.ts",
+    "seed": "bun run src/db/seed.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.38.1",
+    "hono": "^4.6.13"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.14",
+    "drizzle-kit": "^0.30.0"
+  }
+}
